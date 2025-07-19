@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhailog - The Ultimate Squad</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .friends-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+        
+        .friend-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .friend-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .friend-image {
+            width: 100%;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .friend-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .friend-card:hover .friend-image img {
+            transform: scale(1.1);
+        }
+        
+        .friend-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .friend-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .friend-title {
+            color: #6e48aa;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .friend-bio {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .quote {
+            font-style: italic;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .friends-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bhai<span style="color: #f8c291">log</span></h1>
+        <p class="tagline">Four Friends. One Brotherhood.</p>
+    </header>
+    
+    <div class="container">
+        <div class="friends-container">
+            <!-- Friend 1 -->
+            <div class="friend-card">
+                <div class="friend-image">
+                    <img src="/justforfun/images/dhungel.webp" alt="Photo">
+                </div>
+                <div class="friend-info">
+                    <h2 class="friend-name">Shishir</h2>
+                    <p class="friend-title">The Gyaan istributor</p>
+                    <p class="friend-bio">Always ready to give useless advice that doesn't implies in real life.But doesn't know what is he really doing in life.</p>
+                </div>
+            </div>
+            
+            <!-- Friend 2 -->
+            <div class="friend-card">
+                <div class="friend-image">
+                    <img src="/justforfun/images/richa.webp" alt="Photo">
+                </div>
+                <div class="friend-info">
+                    <h2 class="friend-name">Richa</h2>
+                    <p class="friend-title">The Runchi</p>
+                    <p class="friend-bio">If her life is to be summarized then it's only crying with the ultimate combo of earphone and blanket.And forgot to mention She is the queen of Snake.</p>
+                </div>
+            </div>
+            
+            <!-- Friend 3 -->
+            <div class="friend-card">
+                <div class="friend-image">
+                    <img src="/justforfun/images/samikshya.webp" alt="Photo">
+                </div>
+                <div class="friend-info">
+                    <h2 class="friend-name">Samikshya</h2>
+                    <p class="friend-title">The Serious</p>
+                    <p class="friend-bio">She works on the principle of "If I make fun of you it's a joke but you make fun of me it's a disrespect". But she is kind hearted .</p>
+                </div>
+            </div>
+            
+            <!-- Friend 4 -->
+            <div class="friend-card">
+                <div class="friend-image">
+                    <img src="/justforfun/images/niyog.webp" alt=" Photo ">
+                </div>
+                <div class="friend-info">
+                    <h2 class="friend-name">Niyog</h2>
+                    <p class="friend-title">The Peacemaker</p>
+                    <p class="friend-bio">Voice of reason. Knows exactly what to say to make everything alright.The most intellectual person filled with moral ethics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>"Friendship is born at the moment when one person says to another, 'What! You too? I thought I was the only one.'"</p>
+            <p class="quote">- C.S. Lewis</p>
+            <p>&copy; 2023 Bhailog. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Add interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.friend-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Rotate through different accent colors on click
+                    const colors = ['#6e48aa', '#9d50bb', '#4776b6', '#3a86ff'];
+                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    const title = this.querySelector('.friend-title');
+                    title.style.color = randomColor;
+                    title.style.transition = 'color 0.3s ease';
+                    
+                    // Add slight animation
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
